@@ -1,8 +1,8 @@
 // controllers/listingController.ts
 import { Request, Response, NextFunction } from "express";
-import Listing from "../models/Listing.ts";
-import { uploadToCloudinary } from "../utills/Cloudinary.ts";
-import { AuthRequest } from "../middleware/auth.ts";
+import Listing from "../models/Listing";
+import { uploadToCloudinary } from "../utills/Cloudinary";
+import { AuthRequest } from "../middleware/auth";
 
 export const createListing = async (req: AuthRequest, res: Response, next: NextFunction): Promise<void> => {
   try {

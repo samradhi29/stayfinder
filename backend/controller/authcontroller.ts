@@ -1,11 +1,11 @@
 import { Request, Response } from "express";
 import jwt from "jsonwebtoken";
-import User, { IUser } from "../models/User.ts";
+import User, { IUser } from "../models/User";
 import bcrypt from "bcrypt";
 
 const JWT_SECRET = "sam"; // move to .env in real apps
 
-// ✅ Register controller
+// Register controller
 export const register = async (req: Request, res: Response): Promise<void> => {
   const { username, email, password } = req.body;
 

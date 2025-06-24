@@ -1,6 +1,6 @@
 import { Response } from "express";
-import Booking from "../models/Booking.ts";
-import { AuthRequest } from "../middleware/auth.ts";
+import Booking from "../models/Booking";
+import { AuthRequest } from "../middleware/auth";
 
 export const createBooking = async (
   req: AuthRequest,

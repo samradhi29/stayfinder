@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
-import { data as initData } from "./data.ts";
-import Listing from "../models/Listing.ts";
+import { data as initData } from "./data";
+import Listing from "../models/Listing";
 
 export async function seedDB() {
   try {

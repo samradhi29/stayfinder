@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import Listing from "../models/Listing.ts";
+import Listing from "../models/Listing";
 
 // GET all listings with minimal info (title + image URL)
 

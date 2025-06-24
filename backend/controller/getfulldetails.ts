@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import Listing from "../models/Listing.js"; // Changed .ts to .js for proper ESM imports
+import Listing from "../models/Listing";
 
 export const getListingById = async (req: Request, res: Response, next: NextFunction): Promise<any> => {
   try {
