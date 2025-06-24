@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
-const containerStyle = {
-  width: "100%",
-  height: "300px",
-};
+
 
 const ListingDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
