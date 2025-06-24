@@ -15,7 +15,7 @@ export default function EditListing() {
   const token = localStorage.getItem("token");
 
   useEffect(() => {
-    fetch(`http://localhost:8000/api/listings/${id}`, {
+    fetch(`https://stayfinder-15778.onrender.com/api/listings/${id}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -39,7 +39,7 @@ export default function EditListing() {
   const handleUpdate = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await fetch(`http://localhost:8000/api/listings/${id}`, {
+      const res = await fetch(`https://stayfinder-15778.onrender.com/api/listings/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

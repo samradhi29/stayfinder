@@ -23,7 +23,7 @@ const ListingGrid: React.FC = () => {
     });
 
     try {
-      const url = `http://localhost:8000/api/listings${
+      const url = `https://stayfinder-15778.onrender.com/api/listings${
         params.toString() ? `?${params.toString()}` : ""
       }`;
       const res = await fetch(url);
@@ -66,9 +66,7 @@ const ListingGrid: React.FC = () => {
     <>
       <Navbar />
       <div className="pt-24 max-w-7xl mx-auto px-6 py-10">
-        <h1 className="text-4xl font-bold mb-8 text-center text-pink-700 shadow-2xl">
-          Listings
-        </h1>
+       
 
         <form
           onSubmit={handleSubmit}

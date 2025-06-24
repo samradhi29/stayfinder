@@ -9,7 +9,7 @@ const HostDashboard = () => {
     const fetchListings = async () => {
       const token = localStorage.getItem("token");
       try {
-        const res = await fetch("http://localhost:8000/host/api/listings", {
+        const res = await fetch("https://stayfinder-15778.onrender.com/host/api/listings", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -26,7 +26,7 @@ const HostDashboard = () => {
   const handleDelete = async (id: string) => {
     const token = localStorage.getItem("token");
     try {
-      const res = await fetch(`http://localhost:8000/host/api/listings/${id}`, {
+      const res = await fetch(`https://stayfinder-15778.onrender.com/host/api/listings/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

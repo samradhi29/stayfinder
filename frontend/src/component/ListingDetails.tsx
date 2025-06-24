@@ -15,7 +15,7 @@ const ListingDetail: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:8000/api/listings/${id}`)
+    fetch(`https://stayfinder-15778.onrender.com/api/listings/${id}`)
       .then((res) => {
         if (!res.ok) throw new Error("Listing not found");
         return res.json();

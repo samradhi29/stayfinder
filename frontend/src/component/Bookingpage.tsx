@@ -43,7 +43,7 @@ export default function BookingPage() {
     try {
       setLoading(true);
 
-      const response = await fetch("http://localhost:8000/api/booking/book", {
+      const response = await fetch("https://stayfinder-15778.onrender.com/api/booking/book", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

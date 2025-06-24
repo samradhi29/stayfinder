@@ -44,7 +44,7 @@ const CreateListing = () => {
 
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:8000/host/api/listings", {
+      const res = await fetch("https://stayfinder-15778.onrender.com/host/api/listings", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -147,7 +147,7 @@ const CreateListing = () => {
         <button
           type="submit"
           className={`w-full py-2 rounded-md font-medium text-white ${
-            loading ? "bg-gray-400 cursor-not-allowed" : "bg-blue-600 hover:bg-blue-700"
+            loading ? "bg-gray-400 cursor-not-allowed" : "bg-pink-600 hover:bg-blue-700"
           }`}
           disabled={loading}
         >
