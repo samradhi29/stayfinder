@@ -3,10 +3,10 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
 
-import Hostroutes from "./routes/Hostroutes";
-import listingRoute from "./routes/listingRoute";
-import authRoutes from "./routes/listingauth";
-import bookingroute from "./routes/bookingRoutes";
+import Hostroutes from "./routes/Hostroutes.ts";
+import listingRoute from "./routes/listingRoute.ts";
+import authRoutes from "./routes/listingauth.ts";
+import bookingroute from "./routes/bookingRoutes.ts";
 
 // import { seedDB } from "./init/seeder.ts";
 

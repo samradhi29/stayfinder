@@ -1,5 +1,5 @@
 import express from "express";
-import { getAllListings } from "../controller/Listingcontroller.ts"; // ✅ Named imports with curly braces
+import { getAllListings } from "../controller/Listingcontroller.ts";
 import { getListingById } from "../controller/getfulldetails.ts";
 const router = express.Router();
 

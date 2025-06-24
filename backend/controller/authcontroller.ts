@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import jwt from "jsonwebtoken";
-import User, { IUser } from "../models/User";
+import User, { IUser } from "../models/User.ts";
 import bcrypt from "bcrypt";
 
 const JWT_SECRET = "sam"; // move to .env in real apps

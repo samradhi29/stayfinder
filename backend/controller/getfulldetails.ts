@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import Listing from "../models/Listing";
+import Listing from "../models/Listing.ts";
 
 export const getListingById = async (req: Request, res: Response, next: NextFunction): Promise<any> => {
   try {
