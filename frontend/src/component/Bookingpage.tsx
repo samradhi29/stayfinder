@@ -44,7 +44,7 @@ export default function BookingPage() {
     try {
       setLoading(true);
 
-      const response = await fetch("https://stayfinder-15778.onrender.com/api/booking/book", {
+      const response = await fetch("https://stayfinder-1232.onrender.com/api/booking/book", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -60,7 +60,7 @@ export default function BookingPage() {
       const data = await response.json();
 
       if (response.ok) {
-        alert("✅ Booking successful!");
+        alert("Booking successful!");
         navigate("/");
       } else {
         alert(data.msg || "Booking failed.");

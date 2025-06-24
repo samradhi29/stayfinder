@@ -10,7 +10,7 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://stayfinder-15778.onrender.com/api/auth/login", {
+      const response = await fetch("https://stayfinder-1232.onrender.com/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

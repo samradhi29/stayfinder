@@ -44,7 +44,7 @@ const CreateListing = () => {
 
     try {
       setLoading(true);
-      const res = await fetch("https://stayfinder-15778.onrender.com/host/api/listings", {
+      const res = await fetch("https://stayfinder-1232.onrender.com/host/api/listings", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,

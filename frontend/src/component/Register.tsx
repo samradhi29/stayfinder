@@ -14,7 +14,7 @@ export default function Register() {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://stayfinder-15778.onrender.com/api/auth/register", {
+      const response = await fetch("https://stayfinder-1232.onrender.com/api/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -23,7 +23,7 @@ const ListingGrid: React.FC = () => {
     });
 
     try {
-      const url = `https://stayfinder-15778.onrender.com/api/listings${
+      const url = `https://stayfinder-1232.onrender.com/api/listings${
         params.toString() ? `?${params.toString()}` : ""
       }`;
       const res = await fetch(url);

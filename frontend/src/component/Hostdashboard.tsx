@@ -9,7 +9,7 @@ const HostDashboard = () => {
     const fetchListings = async () => {
       const token = localStorage.getItem("token");
       try {
-        const res = await fetch("https://stayfinder-15778.onrender.com/host/api/listings", {
+        const res = await fetch("https://stayfinder-1232.onrender.com/host/api/listings", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
